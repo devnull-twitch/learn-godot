@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/textures/Character.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 20.0
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 3 )
+shape = SubResource( 5 )
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+target_desired_distance = 5.0
+radius = 25.0
+avoidance_enabled = true
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

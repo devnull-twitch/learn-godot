@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://preset/Obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Navigation2D/PathedObstacle.gd" type="Script" id=2]
+
+[node name="PathedObstacle" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
